@@ -7,16 +7,16 @@
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgba(0, 0, 0, 0.938);
+    background-color: rgba(255, 255, 255, 0.938);
     color: rgb(236, 236, 236);
 }
 
 .navbar {
     position: sticky;
-    background-color: rgba(223, 202, 202, 0.747);
-    top: 5px;
-    box-shadow: 0 20px 20px rgb(241, 241, 241);
-    z-index: 10000;
+    background-color: rgba(255, 251, 0, 1);
+    top: 1px;
+    box-shadow: 0 15px 15px rgb(231, 215, 71);
+    z-index: 100000;
     
     
 }
@@ -36,6 +36,7 @@ body{
     flex-wrap: wrap;
     height: auto;
     
+    
 }
 
 .nav-menu{
@@ -46,7 +47,7 @@ body{
 }
 
 .nav-link{
-    color: azure;
+    color: rgb(13, 14, 14);
     text-decoration: wavy;
     font-size: 15pt;+
     font-weight: 300;
@@ -54,8 +55,10 @@ body{
 }
 
 .nav-link:hover{
-    color: brown;
-    background-color: rgba(165, 42, 42, 0.233);
+    color: rgba(0, 255, 255, 0.801);
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px;
+    transition: all 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 750px) {
@@ -70,6 +73,7 @@ body{
         width: 100px;
         height: auto;
         margin-bottom: 16px;
+        
 
     }
     .nav-menu {
