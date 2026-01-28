@@ -1,5 +1,5 @@
 .container {
-    max-width: 1200px;
+    max-width: 2200px;
     margin: 0 auto;
     padding: 32px;
 }
@@ -7,7 +7,7 @@
 .pokemon-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 15px;
     justify-content: center;
     padding: 16px;
 }
@@ -26,7 +26,7 @@
 }
 
 .pokemon-card:hover{
-    color: #f4d03f;
+    color: #828282;
     transform: translateY(-8px);
     box-shadow: 0 8px 16px;
     transition: all 0.3s ease-in-out;
@@ -69,7 +69,7 @@ border: 2px solid rgb(200, 200, 200);
 .pokemon-type {
     padding: 8px 16px;
     border-radius: 20px;
-    color: blueviolet;
+    color: rgb(100, 100, 100);
     font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
@@ -77,40 +77,63 @@ border: 2px solid rgb(200, 200, 200);
 }
 
 .type-fire {
-    background: -moz-linear-gradient(130deg, #f4d03f 0%, rgb(255, 0, 0));
+    background: linear-gradient(130deg, #f4d03f 0%, rgb(255, 0, 0));
     color: rgb(255, 202, 103);
 }
 
 .type-electric {
-    background: -moz-linear-gradient(130deg, #6b70b9 0%, rgb(25, 0, 255));
+    background: linear-gradient(130deg, #6b70b9 0%, rgb(25, 0, 255));
     color: #48b4fc;
 }
 
 .type-grass {
-    background: -moz-linear-gradient(130deg, #14a127 0%, rgb(3, 231, 52));
+    background: linear-gradient(130deg, #14a127 0%, rgb(3, 231, 52));
     color: #1f5827;
 }
 
 .type-fire {
-    background: -moz-linear-gradient(130deg, #f4d03f 0%, rgb(255, 0, 0));
+    background: linear-gradient(130deg, #f4d03f 0%, rgb(255, 0, 0));
 }
 
 .type-water {
-    background: -moz-linear-gradient(130deg, #0099ff 0%, rgb(95, 223, 255));
+    background: linear-gradient(130deg, #0099ff 0%, rgb(95, 223, 255));
     color: aliceblue;
 }
 
 .type-normal {
-    background: -moz-linear-gradient(130deg, #d6d6d6 0%, rgb(219, 218, 218));
+    background: linear-gradient(130deg, #d6d6d6 0%, rgb(219, 218, 218));
     color: #000000;
 }
 
 .type-ghost {
-    background: -moz-linear-gradient(130deg, #b787ee 0%, rgba(125, 7, 204, 0.808));
+    background: linear-gradient(130deg, #b787ee 0%, rgba(125, 7, 204, 0.808));
     color: rgb(0, 0, 0);
 }
 
 .type-psychic {
-    background: -moz-linear-gradient(130deg, #000000 0%, rgb(90, 81, 81));
+    background: linear-gradient(130deg, #000000 0%, rgb(90, 81, 81));
     color: rgb(169, 171, 173);
+}
+
+@media screen and (max-width: 768px) {
+    .pokemon-grid {
+        width: 100%;
+        gap: 8px;
+}
+    .pokemon-card {
+        flex: 100%;
+        gap: 8px;
+}
+}
+
+@media screen and (max-width: 900pxD) {
+    .pokemon-grid {
+        width: 100%;
+        gap: 8px;
+}
+    .pokemon-card {
+        flex: 100%;
+        gap:8px;
+
+}
 }

@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.trainers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    padding: 16px;
+}
+
+.trainer-image {
+width: 100%;
+height: 250px;
+object-fit: contain;
+background: linear-gradient(
+    135deg, 
+    rgb(184, 138, 68) 0%,   
+    rgb(212, 175, 55) 45%,  
+    rgb(255, 245, 200) 50%, 
+    rgb(212, 175, 55) 55%, 
+    rgb(184, 138, 68) 100%  
+);
+
+border: 2px solid rgb(200, 200, 200);
+
+}
+
+
+.trainer-card {
+    background-color: rgb(0, 0, 0);
+    border-radius: 12%;
+    box-shadow: 0 4px 8px rgba(rgb(0, 0, 0), rgb(0, 149, 0), rgb(126, 126, 143), alpha);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(33.333% - 32px);
+    max-width: calc(33.333% - 32px);
+    min-width: 300px;
+
+}
+
+.trainer-card:hover{
+    color: #f0f283;
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.trainer-info {
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+
+
+.trainer-status {
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: rgb(100, 100, 100);
+    font-size: 15px;
+    font-weight: 50;
+    text-transform: uppercase;
+
+}
+
+.status-active {
+    background: linear-gradient(135deg, #1a1202 0%, #634708 45%, #f4d03f 50%, #634708 55%, #1a1202 100%);
+    color: #fff2cc;
+    text-shadow: 0 0 8px rgba(244, 208, 63, 0.6);
+    border: 1px solid rgba(244, 208, 63, 0.3);
+    box-shadow: inset 0 0 15px rgba(244, 208, 63, 0.1);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+.status-champion {
+    background: linear-gradient(135deg, #0f0524 0%, #351c75 50%, #0f0524 100%);
+    color: #e0d1ff;
+    text-shadow: 0 0 10px rgba(184, 146, 255, 0.7);
+    border: 1px solid rgba(147, 112, 219, 0.4);
+    box-shadow: 0 0 20px rgba(53, 28, 117, 0.4), inset 0 0 10px rgba(184, 146, 255, 0.2);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+.status-investigador {
+    background: linear-gradient(135deg, #021a0e 0%, #084d2e 50%, #021a0e 100%);
+    color: #d1ffea;
+    text-shadow: 0 0 10px rgba(46, 204, 113, 0.6);
+    border: 1px solid rgba(46, 204, 113, 0.3);
+    box-shadow: 0 0 15px rgba(8, 77, 46, 0.4), inset 0 0 10px rgba(46, 204, 113, 0.1);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+.status-coordinadora {
+    background: linear-gradient(135deg, #240b05 0%, #7d3c2a 50%, #240b05 100%);
+    color: #ffd8cc;
+    text-shadow: 0 0 10px rgba(255, 126, 95, 0.6);
+    border: 1px solid rgba(125, 60, 42, 0.5);
+    box-shadow: 0 0 15px rgba(125, 60, 42, 0.3), inset 0 0 10px rgba(255, 126, 95, 0.1);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+.status-artista {
+    background: linear-gradient(135deg, #2d0a1a 0%, #8e2de2 50%, #4a00e0 100%);
+    color: #fceaff;
+    text-shadow: 0 0 12px rgba(224, 131, 255, 0.8);
+    border: 1px solid rgba(142, 45, 226, 0.4);
+    box-shadow: 0 0 15px rgba(74, 0, 224, 0.3), inset 0 0 10px rgba(252, 234, 255, 0.2);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+.status-lider {
+    background: linear-gradient(135deg, #000428 0%, #004e92 50%, #000428 100%);
+    color: #d4f1ff;
+    text-shadow: 0 0 10px rgba(0, 198, 255, 0.7);
+    border: 1px solid rgba(0, 78, 146, 0.5);
+    box-shadow: 0 0 20px rgba(0, 78, 146, 0.5), inset 0 0 10px rgba(0, 198, 255, 0.2);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    .trainer-grid {
+        width: 100%;
+        gap: 8px;
+}
+    .trainer-card {
+        flex: 100%;
+        gap: 8px;
+}
+}
+
+@media screen and (max-width: 900pxD) {
+    .trainer-grid {
+        width: 100%;
+        gap: 8px;
+}
+    .trainer-card {
+        flex: 100%;
+        gap:8px;
+
+}
+}
