@@ -126,7 +126,7 @@ border: 2px solid rgb(200, 200, 200);
 }
 }
 
-@media screen and (max-width: 900pxD) {
+@media screen and (max-width: 900px) {
     .pokemon-grid {
         width: 100%;
         gap: 8px;
