@@ -13,7 +13,7 @@
 }
 
 .pokemon-card {
-    background-color: rgba(244, 248, 0, 0.356);
+    background-color: rgba(233, 233, 233, 0.801);
     border-radius: 20%;
     box-shadow: 0 4px 8px rgba(rgb(85, 85, 85), rgb(190, 199, 190), rgb(126, 126, 143), alpha);
     overflow: hidden;
@@ -26,7 +26,7 @@
 }
 
 .pokemon-card:hover{
-    color: #828282;
+    color: #ffffff;
     transform: translateY(-8px);
     box-shadow: 0 8px 16px;
     transition: all 0.3s ease-in-out;
